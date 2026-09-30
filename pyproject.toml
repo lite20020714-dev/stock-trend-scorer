@@ -1,0 +1,28 @@
+[project]
+name = "stock-trend-scorer"
+version = "0.1.0"
+description = "Price trend scoring for held and market-wide stocks (JP/US)."
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "numpy",
+    "pandas-ta",
+    "yfinance",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+gui = ["PySide6"]
+
+[project.scripts]
+stock-trend-scorer = "stock_trend_scorer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stock_trend_scorer*"]
+
+[tool.setuptools.package-data]
+"stock_trend_scorer.data" = ["universe/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

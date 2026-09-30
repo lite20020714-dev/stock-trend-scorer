@@ -1,0 +1,7 @@
+pandas
+numpy
+pandas-ta
+yfinance
+requests
+pytest
+PySide6

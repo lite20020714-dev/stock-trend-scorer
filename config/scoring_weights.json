@@ -1,0 +1,13 @@
+{
+  "weights": {
+    "ma_cross": 1.0,
+    "price_change": 1.0,
+    "rsi": 1.0,
+    "macd": 1.0,
+    "volume": 1.0
+  },
+  "thresholds": {
+    "up": 0.3,
+    "down": -0.3
+  }
+}

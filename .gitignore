@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.egg-info/
+build/
+dist/
+bt_jp_1m.csv
+bt_jp_2m.csv
+bt_us_1m.csv
+bt_us_2m.csv
